@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags requeridos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strivo</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <!-- Enlace a nuestro CSS personalizado -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- HEADER: Contiene el logo, barra de búsqueda y botones de usuario/carrito -->
+    <section id="section-header"> 
+  <header class="container header-content">
+    <div class="row align-items-center">
+      <!-- Logo -->
+      <div class="col-md-3 d-flex align-items-center">
+        <div class="logo-text d-flex align-items-center">
+          <a href="./index.html" class="text-strivo">
+            <img src="./image/logo.png" width="70px" height="70px" alt="logo">
+            <span class="align-items-center">TRIVO</span></a>
+        </div>                        
+      </div>
+      
+      <!-- Menú principal en pantallas grandes -->
+      <div class="col-md-6 d-none d-md-block">
+        <nav class="main-nav">
+          <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-3 active">Inicio</a></li>
+
+            <!-- Mega menú "Hombre" -->
+            <li class="nav-item dropdown position-relative">
+              <a href="./categorias/hombre/hombre.html" class="nav-link">Hombre</a>
+                <div class="dropdown-menu mega-menu p-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <strong>DEPORTES</strong> </h6>
+                            <a class="dropdown-item" href="#">Básquetball</a>
+                            <a class="dropdown-item" href="#">Tenis</a>
+                            <a class="dropdown-item" href="#">Futboll</a>
+                            <a class="dropdown-item" href="#">Voleibol</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <b>CALZADO</b> </h6>
+                            <a class="dropdown-item" href="#">Casual</a>
+                            <a class="dropdown-item" href="#">Botines</a>
+                            <a class="dropdown-item" href="#">Sandalias</a>
+                            <a class="dropdown-item" href="#">Guayos</a>
+                            <a class="dropdown-item" href="#">Tenis</a>
+                            <a class="dropdown-item" href="#">Botas</a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">ROPA</h6>
+                            <a class="dropdown-item" href="#">Chaquetas</a>
+                            <a class="dropdown-item" href="#">Camisas</a>
+                            <a class="dropdown-item" href="#">Camisa selección</a>
+                            <a class="dropdown-item" href="#">Camisillas</a>
+                            <a class="dropdown-item" href="#">Sudadera</a>
+                            <a class="dropdown-item" href="#">Licras</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">ACCESORIOS</h6>
+                            <a class="dropdown-item" href="#">Gorras</a>
+                            <a class="dropdown-item" href="#">Bolsos</a>
+                            <a class="dropdown-item" href="#">Medias</a>
+                            <a class="dropdown-item" href="#">Balones</a>
+                            <a class="dropdown-item" href="#">Guantes</a>
+                            <a class="dropdown-item" href="#">Botellas</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>  
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown position-relative">
+              <a href="#" class="nav-link">Mujer</a>
+                <div class="dropdown-menu mega-menu p-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <strong>DEPORTES</strong> </h6>
+                            <a class="dropdown-item" href="#">Gimnacio</a>
+                            <a class="dropdown-item" href="#">Tenis</a>
+                            <a class="dropdown-item" href="#">Zamba</a>
+                            <a class="dropdown-item" href="#">Yoga</a>
+                            <a class="dropdown-item" href="#">Taekwondo</a>
+                            <a class="dropdown-item" href="#">Natación</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <b>CALZADO</b> </h6>
+                            <a class="dropdown-item" href="#">Casual</a>
+                            <a class="dropdown-item" href="#">Botines</a>
+                            <a class="dropdown-item" href="#">Sandalias</a>
+                            <a class="dropdown-item" href="#">Chancletas</a>
+                            <a class="dropdown-item" href="#">Tenis</a>
+                            <a class="dropdown-item" href="#">Botas</a>
+                            <a class="dropdown-item" href="#">Mocasines</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">ROPA</h6>
+                            <a class="dropdown-item" href="#">Chaquetas</a>
+                            <a class="dropdown-item" href="#">Camisas</a>
+                            <a class="dropdown-item" href="#">Camisa selección</a>
+                            <a class="dropdown-item" href="#">Sudaderas</a>
+                            <a class="dropdown-item" href="#">Top deportivo</a>
+                            <a class="dropdown-item" href="#">Licras</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">ACCESORIOS</h6>
+                            <a class="dropdown-item" href="#">Gorro</a>
+                            <a class="dropdown-item" href="#">Bolsos</a>
+                            <a class="dropdown-item" href="#">Medias</a>
+                            <a class="dropdown-item" href="#">Balones</a>
+                            <a class="dropdown-item" href="#">cuerdas</a>
+                            <a class="dropdown-item" href="#">Botellas</a>
+                            <a class="dropdown-item" href="#">Morrales</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown position-relative">
+              <a href="#" class="nav-link">Niños</a>
+                <div class="dropdown-menu mega-menu p-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <strong>DEPORTES</strong> </h6>
+                            <a class="dropdown-item" href="#">Futboll</a>
+                            <a class="dropdown-item" href="#">Básquetball</a>
+                            <a class="dropdown-item" href="#">Tenis</a>
+                            <a class="dropdown-item" href="#">Running</a>
+                            <a class="dropdown-item" href="#">Taekwondo</a>
+                            <a class="dropdown-item" href="#">Natación</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <b>NIÑO</b> </h6>
+                            <a class="dropdown-item" href="#">Camisetas</a>
+                            <a class="dropdown-item" href="#">Botines</a>
+                            <a class="dropdown-item" href="#">Abrigos</a>
+                            <a class="dropdown-item" href="#">Pantalones</a>
+                            <a class="dropdown-item" href="#">Botas</a>
+                            <a class="dropdown-item" href="#">Guayos</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">NIÑA</h6>
+                            <a class="dropdown-item" href="#">Chaquetas</a>
+                            <a class="dropdown-item" href="#">Camisas</a>
+                            <a class="dropdown-item" href="#">Camisa selección</a>
+                            <a class="dropdown-item" href="#">Top deportivo</a>
+                            <a class="dropdown-item" href="#">Licras</a>
+                            <a class="dropdown-item" href="#">Sudadera</a>
+                            <a class="dropdown-item" href="#">Pantalón</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">ACCESORIOS</h6>
+                            <a class="dropdown-item" href="#">Gorros</a>
+                            <a class="dropdown-item" href="#">Medias</a>
+                            <a class="dropdown-item" href="#">Balones</a>
+                            <a class="dropdown-item" href="#">cuerdas</a>
+                            <a class="dropdown-item" href="#">Botellas</a>
+                            <a class="dropdown-item" href="#">Morrales</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown position-relative">
+              <a href="#" class="nav-link">Deporte</a>
+                <div class="dropdown-menu mega-menu p-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <strong>FUTBOLL</strong> </h6>
+                            <a class="dropdown-item" href="#">Balon</a>
+                            <a class="dropdown-item" href="#">Pantalones</a>
+                            <a class="dropdown-item" href="#">Camisetas</a>
+                            <a class="dropdown-item" href="#">Camiseta selección</a>
+                            <a class="dropdown-item" href="#">medias</a>
+                            <a class="dropdown-item" href="#">Guantes</a>
+                            <a class="dropdown-item" href="#">Guayos</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <b>TENIS</b> </h6>
+                            <a class="dropdown-item" href="#">Raquetas</a>
+                            <a class="dropdown-item" href="#">Pelotas</a>
+                            <a class="dropdown-item" href="#">Zapatos</a>
+                            <a class="dropdown-item" href="#">Camisas</a>
+                            <a class="dropdown-item" href="#">Red</a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">NATACIÓN</h6>
+                            <a class="dropdown-item" href="#">Gorro</a>
+                            <a class="dropdown-item" href="#">Vestido de baño</a>
+                            <a class="dropdown-item" href="#">Gafas</a>
+                            <a class="dropdown-item" href="#">Aletas de buceo</a>
+                            <a class="dropdown-item" href="#">Toalla</a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">MÁS DEPORTES</h6>
+                            <a class="dropdown-item" href="#">Cricket</a>
+                            <a class="dropdown-item" href="#">Básquetball</a>
+                            <a class="dropdown-item" href="#">Hockey</a>
+                            <a class="dropdown-item" href="#">Rugby</a>
+                            <a class="dropdown-item" href="#">Balonnmano</a>
+                            <a class="dropdown-item" href="#">Beisbol</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown position-relative">
+              <a href="#" class="nav-link">Descuentos</a>
+                <div class="dropdown-menu mega-menu p-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <strong>OFERTAS</strong> </h6>
+                            <a class="dropdown-item" href="#">Hombre</a>
+                            <a class="dropdown-item" href="#">Mujer</a>
+                            <a class="dropdown-item" href="#">Niño</a>
+                            <a class="dropdown-item" href="#">Niña</a>
+                            <a class="dropdown-item" href="#">Accesorios</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase"> <b>MARCAS RECONOCIDAS</b> </h6>
+                            <a class="dropdown-item" href="#">Adidas</a>
+                            <a class="dropdown-item" href="#">Nike</a>
+                            <a class="dropdown-item" href="#">Reebook</a>
+                            <a class="dropdown-item" href="#">Vans</a>
+                            <a class="dropdown-item" href="#">Puma</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">ULTIMAS UNIDADES</h6>
+                            <a class="dropdown-item" href="#">Calzado</a>
+                            <a class="dropdown-item" href="#">Medias</a>
+                            <a class="dropdown-item" href="#">Camisas</a>
+                            <a class="dropdown-item" href="#">Patalones</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-uppercase">DEPORTES</h6>
+                            <a class="dropdown-item" href="#">Cricket</a>
+                            <a class="dropdown-item" href="#">Básquetball</a>
+                            <a class="dropdown-item" href="#">Hockey</a>
+                            <a class="dropdown-item" href="#">Rugby</a>
+                            <a class="dropdown-item" href="#">Balonnmano</a>
+                            <a class="dropdown-item" href="#">Beisbol</a>
+                            <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      <!-- Búsqueda y botones de usuario -->
+      <div class="col-md-3">
+        <div class="d-flex justify-content-end align-items-center">
+          <!-- Barra de búsqueda -->
+          <div class="search-bar me-3">
+            <form class="d-flex">
+              <input class="form-control form-control-sm rounded-pill" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-search" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          
+          <!-- Botón de usuario -->
+          <a href="#" class="btn btn-link text-dark me-2">
+            <i class="fas fa-user"></i>
+          </a>
+          
+          <!-- Botón de carrito -->
+          <a href="./carrito/shopping.html" class="btn btn-link text-dark position-relative">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Menú móvil (visible solo en pantallas pequeñas) -->
+    <div class="row d-md-none mt-2">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+          <button class="navbar-toggler w-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile">
+            <span class="navbar-toggler-icon"></span> Menú
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMobile">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Hombre</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Mujer</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Niños</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Deporte</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Descuentos</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>   
+</section>
+
+    
+
+    <!-- HERO BANNER: Banner principal con llamada a la acción -->
+    <section id="hero-banner">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-md-6 d-flex align-items-center hero-content">
+                    <div class="p-5">
+                        <h2 class="display-4 fw-bold text-brown">Supera tus límites y vive el deporte al máximo</h2>
+                        <div class="mt-4">
+                            <a href="#productos" class="btn btn-brown rounded-pill px-4 py-2">
+                                Compra ahora! <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./image/hero-banner-photo.jpg" class="img-fluid hero-image" alt="Deportistas en escalera">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS: Sección con categorías principales -->
+    <section class="categories-section py-5">
+        <div class="container-fluid px-3">
+            <div class="row g-4">
+                <div class="col-6 col-md-2">
+                    <a href="./hombre.html" class="category-link">
+                        <div class="category-card text-center">
+                            <img src="./image/Men_Sport.jpg" class="img-category img-fluid rounded mb-3" alt="Hombre con raqueta de tenis">
+                            <h3 class="category-title">Hombre</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <a href="#" class="category-link">
+                        <div class="category-card text-center">
+                            <img src="./image/Women_Sport.jpg" class="img-category img-fluid rounded mb-3" alt="Mujeres deportistas">
+                            <h3 class="category-title">Mujer</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <a href="#" class="category-link">
+                        <div class="category-card text-center">
+                            <img src="./image/Boys_Sport.jpg" class="img-category img-fluid rounded mb-3" alt="Niño en skateboard">
+                            <h3 class="category-title">Niños</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <a href="#" class="category-link">
+                        <div class="category-card text-center">
+                            <img src="./image/Sport.jpg" class="img-category img-fluid rounded mb-3" alt="Deportista esquiando">
+                            <h3 class="category-title">Deporte</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <a href="#" class="category-link">
+                        <div class="category-card text-center">
+                            <img src="./image/Sale.jpg" class="img-category img-fluid rounded mb-3" alt="Entrenamiento personal">
+                            <h3 class="category-title">  Descuentos</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <a href="#" class="category-link">
+                        <div class="category-card text-center">
+                            <img src="./image/Accesories.jpg" class="img-category img-fluid rounded mb-3" alt="Entrenamiento personal">
+                            <h3 class="category-title">Accesorios</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE PRODUCTOS: 3 filas con 4 productos cada una -->
+    <section id="productos" class="products py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5"> <strong>Nuestros Productos Destacados</strong> </h2>
+            
+            <!-- Primera fila de productos -->
+            <div class="row mb-4">
+                <!-- Producto 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="card product-card h-100">
+                        <img src="./image/Zapatos1.jpg" class="card-img-top" alt="Zapatillas deportivas">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatillas Running Pro</h5>
+                            <p class="card-text text-muted">Calzado / Hombre</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$289.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="card product-card h-100">
+                        <img src="./image/Camiseta1.jpg" class="card-img-top" alt="Camiseta deportiva">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta DryFit</h5>
+                            <p class="card-text text-muted">Ropa / hombre</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$79.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1539185441755-769473a23570" class="card-img-top" alt="Pantalón deportivo">
+                        <div class="card-body">
+                            <h5 class="card-title">Leggins Performance</h5>
+                            <p class="card-text text-muted">Ropa mujer</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$124.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="col-6 col-md-3">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1591491680738-bf6e9f73fbc2" class="card-img-top" alt="Mochila deportiva">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Trail 25L</h5>
+                            <p class="card-text text-muted">Accesorios</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$159.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Segunda fila de productos -->
+            <div class="row mb-4">
+                <!-- Producto 5 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f" class="card-img-top" alt="Balón de fútbol">
+                        <div class="card-body">
+                            <h5 class="card-title">Balón Fútbol Oficial</h5>
+                            <p class="card-text text-muted">Equipamiento</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$119.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1581344946641-55a0c7c31250" class="card-img-top" alt="Raqueta de tenis">
+                        <div class="card-body">
+                            <h5 class="card-title">Raqueta Tenis Pro</h5>
+                            <p class="card-text text-muted">Equipamiento</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$349.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 7 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1563089145-599997674d42" class="card-img-top" alt="Botella deportiva">
+                        <div class="card-body">
+                            <h5 class="card-title">Botella Térmica 750ml</h5>
+                            <p class="card-text text-muted">Accesorios</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$59.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 8 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1515468381879-40d0303232b5" class="card-img-top" alt="Chaqueta deportiva">
+                        <div class="card-body">
+                            <h5 class="card-title">Chaqueta Cortavientos</h5>
+                            <p class="card-text text-muted">Ropa hombre</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$199.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tercera fila de productos -->
+            <div class="row mb-4">
+                <!-- Producto 9 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1608667508764-33cf0726b13a" class="card-img-top" alt="Reloj deportivo">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartwatch Sport GPS</h5>
+                            <p class="card-text text-muted">Tecnología</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$529.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 10 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6" class="card-img-top" alt="Shorts deportivos">
+                        <div class="card-body">
+                            <h5 class="card-title">Shorts Training</h5>
+                            <p class="card-text text-muted">Ropa hombre</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$89.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 11 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1610723284656-dc9880173ce8" class="card-img-top" alt="Top deportivo">
+                        <div class="card-body">
+                            <h5 class="card-title">Top Impact Medium</h5>
+                            <p class="card-text text-muted">Ropa mujer</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$94.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 12 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5" class="card-img-top" alt="Mancuernas">
+                        <div class="card-body">
+                            <h5 class="card-title">Set Mancuernas 10kg</h5>
+                            <p class="card-text text-muted">Entrenamiento</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$259.900 COP</span>
+                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE SUSCRIPCIÓN -->
+    <section class="subscription py-5 bg-brown text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">Únete al club y recibe un 10% de descuento en tu primera compra</h2>
+                    <form class="subscription-form">
+                        <div class="row g-2">
+                            <div class="col-md-8">
+                                <input type="email" class="form-control form-control-lg" placeholder="Tu correo electrónico" required>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-light btn-lg w-100">Registrarme</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER: Información de contacto, legales y redes sociales -->
+    <footer class="footer py-5 bg-brown text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>Contáctanos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-comment me-2"></i> Chatea con nosotros</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> Servicioalcliente@strivo.com</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +57 300 268 25 25</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Carrera 53B # 84 - 175 Bogotá - Colombia</li>
+                    </ul>
+                </div>
+                
+                <!-- Información legal -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4>Legales</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Términos legales</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Políticas de Privacidad</a></li>
+                        <li><a href="#" class="text-white">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Redes sociales -->
+                <div class="col-md-4">
+                    <h4>Síguenos en:</h4>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Strivo - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para detalles de producto -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="modalProductImage" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" class="img-fluid" alt="Producto">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="modalProductTitle">Zapatillas Running Pro</h3>
+                            <p class="text-muted mb-2">Calzado</p>
+                            <p class="h4 mb-4" id="modalProductPrice">$289.900 COP</p>
+                            
+                            <p>Zapatillas de alto rendimiento diseñadas para corredores exigentes. Amortiguación superior y soporte para largas distancias.</p>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Talla</label>
+                                <select class="form-select">
+                                    <option>36</option>
+                                    <option>37</option>
+                                    <option>38</option>
+                                    <option>39</option>
+                                    <option>40</option>
+                                    <option>41</option>
+                                    <option>42</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Cantidad</label>
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary" type="button" id="decreaseQuantity">-</button>
+                                    <input type="number" class="form-control text-center" value="1" min="1" id="productQuantity">
+                                    <button class="btn btn-outline-secondary" type="button" id="increaseQuantity">+</button>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-brown w-100">Añadir al carrito de compras</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap y JavaScript personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags requeridos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strivo</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <!-- Enlace a nuestro CSS personalizado -->
+    <link rel="stylesheet" href="./styleShopping.css">
+</head>
+<body>
+  <!-- HEADER: Contiene el logo, barra de búsqueda y botones de usuario/carrito -->
+  <section id="section-header"> 
+    <header class="container-fluid header-content">
+      <div class="row align-items-center">
+        <!-- Logo -->
+        <div class="col-md-3 d-flex align-items-center">
+        <div class="logo-text d-flex align-items-center">
+          <a href="./index.html" class="text-strivo">
+            <img src="../image/logo.png" width="70px" height="70px" alt="logo">
+            <span class="align-items-center">TRIVO</span></a>
+        </div>                        
+        </div>
+        
+        <!-- Menú principal en pantallas grandes -->
+        <div class="col-md-6 d-none d-md-block">
+          <nav class="main-nav">
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a href="../index.html" class="nav-link px-3 active">Inicio</a></li>
+
+              <!-- Mega menú "Hombre" -->
+              <li class="nav-item dropdown position-relative">
+                <a href="../index.html" class="nav-link">Hombre</a>
+                  <div class="dropdown-menu mega-menu p-4">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <strong>DEPORTES</strong> </h6>
+                              <a class="dropdown-item" href="#">Básquetball</a>
+                              <a class="dropdown-item" href="#">Tenis</a>
+                              <a class="dropdown-item" href="#">Futboll</a>
+                              <a class="dropdown-item" href="#">Voleibol</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <b>CALZADO</b> </h6>
+                              <a class="dropdown-item" href="#">Casual</a>
+                              <a class="dropdown-item" href="#">Botines</a>
+                              <a class="dropdown-item" href="#">Sandalias</a>
+                              <a class="dropdown-item" href="#">Guayos</a>
+                              <a class="dropdown-item" href="#">Tenis</a>
+                              <a class="dropdown-item" href="#">Botas</a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">ROPA</h6>
+                              <a class="dropdown-item" href="#">Chaquetas</a>
+                              <a class="dropdown-item" href="#">Camisas</a>
+                              <a class="dropdown-item" href="#">Camisa selección</a>
+                              <a class="dropdown-item" href="#">Camisillas</a>
+                              <a class="dropdown-item" href="#">Sudadera</a>
+                              <a class="dropdown-item" href="#">Licras</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">ACCESORIOS</h6>
+                              <a class="dropdown-item" href="#">Gorras</a>
+                              <a class="dropdown-item" href="#">Bolsos</a>
+                              <a class="dropdown-item" href="#">Medias</a>
+                              <a class="dropdown-item" href="#">Balones</a>
+                              <a class="dropdown-item" href="#">Guantes</a>
+                              <a class="dropdown-item" href="#">Botellas</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>  
+                      </div>
+                  </div>
+              </li>
+
+              <li class="nav-item dropdown position-relative">
+                <a href="#" class="nav-link">Mujer</a>
+                  <div class="dropdown-menu mega-menu p-4">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <strong>DEPORTES</strong> </h6>
+                              <a class="dropdown-item" href="#">Gimnacio</a>
+                              <a class="dropdown-item" href="#">Tenis</a>
+                              <a class="dropdown-item" href="#">Zamba</a>
+                              <a class="dropdown-item" href="#">Yoga</a>
+                              <a class="dropdown-item" href="#">Taekwondo</a>
+                              <a class="dropdown-item" href="#">Natación</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <b>CALZADO</b> </h6>
+                              <a class="dropdown-item" href="#">Casual</a>
+                              <a class="dropdown-item" href="#">Botines</a>
+                              <a class="dropdown-item" href="#">Sandalias</a>
+                              <a class="dropdown-item" href="#">Chancletas</a>
+                              <a class="dropdown-item" href="#">Tenis</a>
+                              <a class="dropdown-item" href="#">Botas</a>
+                              <a class="dropdown-item" href="#">Mocasines</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">ROPA</h6>
+                              <a class="dropdown-item" href="#">Chaquetas</a>
+                              <a class="dropdown-item" href="#">Camisas</a>
+                              <a class="dropdown-item" href="#">Camisa selección</a>
+                              <a class="dropdown-item" href="#">Sudaderas</a>
+                              <a class="dropdown-item" href="#">Top deportivo</a>
+                              <a class="dropdown-item" href="#">Licras</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">ACCESORIOS</h6>
+                              <a class="dropdown-item" href="#">Gorro</a>
+                              <a class="dropdown-item" href="#">Bolsos</a>
+                              <a class="dropdown-item" href="#">Medias</a>
+                              <a class="dropdown-item" href="#">Balones</a>
+                              <a class="dropdown-item" href="#">cuerdas</a>
+                              <a class="dropdown-item" href="#">Botellas</a>
+                              <a class="dropdown-item" href="#">Morrales</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="nav-item dropdown position-relative">
+                <a href="#" class="nav-link">Niños</a>
+                  <div class="dropdown-menu mega-menu p-4">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <strong>DEPORTES</strong> </h6>
+                              <a class="dropdown-item" href="#">Futboll</a>
+                              <a class="dropdown-item" href="#">Básquetball</a>
+                              <a class="dropdown-item" href="#">Tenis</a>
+                              <a class="dropdown-item" href="#">Running</a>
+                              <a class="dropdown-item" href="#">Taekwondo</a>
+                              <a class="dropdown-item" href="#">Natación</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <b>NIÑO</b> </h6>
+                              <a class="dropdown-item" href="#">Camisetas</a>
+                              <a class="dropdown-item" href="#">Botines</a>
+                              <a class="dropdown-item" href="#">Abrigos</a>
+                              <a class="dropdown-item" href="#">Pantalones</a>
+                              <a class="dropdown-item" href="#">Botas</a>
+                              <a class="dropdown-item" href="#">Guayos</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">NIÑA</h6>
+                              <a class="dropdown-item" href="#">Chaquetas</a>
+                              <a class="dropdown-item" href="#">Camisas</a>
+                              <a class="dropdown-item" href="#">Camisa selección</a>
+                              <a class="dropdown-item" href="#">Top deportivo</a>
+                              <a class="dropdown-item" href="#">Licras</a>
+                              <a class="dropdown-item" href="#">Sudadera</a>
+                              <a class="dropdown-item" href="#">Pantalón</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">ACCESORIOS</h6>
+                              <a class="dropdown-item" href="#">Gorros</a>
+                              <a class="dropdown-item" href="#">Medias</a>
+                              <a class="dropdown-item" href="#">Balones</a>
+                              <a class="dropdown-item" href="#">cuerdas</a>
+                              <a class="dropdown-item" href="#">Botellas</a>
+                              <a class="dropdown-item" href="#">Morrales</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="nav-item dropdown position-relative">
+                <a href="#" class="nav-link">Deporte</a>
+                  <div class="dropdown-menu mega-menu p-4">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <strong>FUTBOLL</strong> </h6>
+                              <a class="dropdown-item" href="#">Balon</a>
+                              <a class="dropdown-item" href="#">Pantalones</a>
+                              <a class="dropdown-item" href="#">Camisetas</a>
+                              <a class="dropdown-item" href="#">Camiseta selección</a>
+                              <a class="dropdown-item" href="#">medias</a>
+                              <a class="dropdown-item" href="#">Guantes</a>
+                              <a class="dropdown-item" href="#">Guayos</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <b>TENIS</b> </h6>
+                              <a class="dropdown-item" href="#">Raquetas</a>
+                              <a class="dropdown-item" href="#">Pelotas</a>
+                              <a class="dropdown-item" href="#">Zapatos</a>
+                              <a class="dropdown-item" href="#">Camisas</a>
+                              <a class="dropdown-item" href="#">Red</a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">NATACIÓN</h6>
+                              <a class="dropdown-item" href="#">Gorro</a>
+                              <a class="dropdown-item" href="#">Vestido de baño</a>
+                              <a class="dropdown-item" href="#">Gafas</a>
+                              <a class="dropdown-item" href="#">Aletas de buceo</a>
+                              <a class="dropdown-item" href="#">Toalla</a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">MÁS DEPORTES</h6>
+                              <a class="dropdown-item" href="#">Cricket</a>
+                              <a class="dropdown-item" href="#">Básquetball</a>
+                              <a class="dropdown-item" href="#">Hockey</a>
+                              <a class="dropdown-item" href="#">Rugby</a>
+                              <a class="dropdown-item" href="#">Balonnmano</a>
+                              <a class="dropdown-item" href="#">Beisbol</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="nav-item dropdown position-relative">
+                <a href="#" class="nav-link">Descuentos</a>
+                  <div class="dropdown-menu mega-menu p-4">
+                      <div class="row">
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <strong>OFERTAS</strong> </h6>
+                              <a class="dropdown-item" href="#">Hombre</a>
+                              <a class="dropdown-item" href="#">Mujer</a>
+                              <a class="dropdown-item" href="#">Niño</a>
+                              <a class="dropdown-item" href="#">Niña</a>
+                              <a class="dropdown-item" href="#">Accesorios</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase"> <b>MARCAS RECONOCIDAS</b> </h6>
+                              <a class="dropdown-item" href="#">Adidas</a>
+                              <a class="dropdown-item" href="#">Nike</a>
+                              <a class="dropdown-item" href="#">Reebook</a>
+                              <a class="dropdown-item" href="#">Vans</a>
+                              <a class="dropdown-item" href="#">Puma</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">ULTIMAS UNIDADES</h6>
+                              <a class="dropdown-item" href="#">Calzado</a>
+                              <a class="dropdown-item" href="#">Medias</a>
+                              <a class="dropdown-item" href="#">Camisas</a>
+                              <a class="dropdown-item" href="#">Patalones</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                          <div class="col-md-3">
+                              <h6 class="text-uppercase">DEPORTES</h6>
+                              <a class="dropdown-item" href="#">Cricket</a>
+                              <a class="dropdown-item" href="#">Básquetball</a>
+                              <a class="dropdown-item" href="#">Hockey</a>
+                              <a class="dropdown-item" href="#">Rugby</a>
+                              <a class="dropdown-item" href="#">Balonnmano</a>
+                              <a class="dropdown-item" href="#">Beisbol</a>
+                              <a class="dropdown-item ver-mas" href="#"> <u>Ver más...</u></a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+        <!-- Búsqueda y botones de usuario -->
+        <div class="col-md-3">
+          <div class="d-flex justify-content-end align-items-center">
+            <!-- Barra de búsqueda -->
+            <div class="search-bar me-3">
+              <form class="d-flex">
+                <input class="form-control form-control-sm rounded-pill" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-search" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+            
+            <!-- Botón de usuario -->
+            <a href="#" class="btn btn-link text-dark me-2">
+              <i class="fas fa-user"></i>
+            </a>
+            
+            <!-- Botón de carrito -->
+            <a href="hombre.html" class="btn btn-link text-dark position-relative">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+                <!-- <span class="cart-badge">3</span> -->
+
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Menú móvil (visible solo en pantallas pequeñas) -->
+      <div class="row d-md-none mt-2">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <button class="navbar-toggler w-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile">
+              <span class="navbar-toggler-icon"></span> Menú
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMobile">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Hombre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Mujer</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Niños</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Deporte</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Descuentos</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>   
+  </section>
+
+  <main id="main-content">
+    <div class="container">
+        <div class="row">
+            <!-- Carrito de compras -->
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white">
+                        <h4 class="mb-0">Carrito de compras</h4>
+                    </div>
+                    <div class="card-body" id="cart-items">
+                        <!-- Producto 1 -->
+                        <div class="cart-item mb-4" data-id="1">
+                            <div class="row align-items-center">
+                                <div class="col-md-3">
+                                    <img src="https://via.placeholder.com/150x150/D2B48C/8B4513?text=Tenis" class="img-fluid rounded" alt="Tenis Courtblock Bold">
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="mb-1">Tenis Courtblock Bold - Mujer Sportwear</h6>
+                                    <p class="text-muted mb-1">Color: Rosa palo</p>
+                                    <p class="text-muted mb-2">Talla: S</p>
+                                    <p class="price mb-0 fw-bold text-danger">$ 279.999</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="quantity-controls">
+                                            <button class="btn btn-outline-secondary btn-sm quantity-btn" data-action="decrease">-</button>
+                                            <span class="quantity mx-2">2</span>
+                                            <button class="btn btn-outline-secondary btn-sm quantity-btn" data-action="increase">+</button>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-link text-muted" data-bs-toggle="dropdown">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item view-details" href="#" data-id="1">Ver detalles</a></li>
+                                                <li><a class="dropdown-item text-danger remove-item" href="#" data-id="1">Eliminar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="cart-item mb-4" data-id="2">
+                            <div class="row align-items-center">
+                                <div class="col-md-3">
+                                    <img src="https://via.placeholder.com/150x150/CD5C5C/8B0000?text=Chaqueta" class="img-fluid rounded" alt="Chaqueta de tejido Woven">
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="mb-1">Chaqueta de tejido Woven - Mujer adidas</h6>
+                                    <p class="text-muted mb-1">Color: rojo</p>
+                                    <p class="text-muted mb-2">Talla: XL</p>
+                                    <p class="price mb-0 fw-bold text-danger">$ 495.999</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="quantity-controls">
+                                            <button class="btn btn-outline-secondary btn-sm quantity-btn" data-action="decrease">-</button>
+                                            <span class="quantity mx-2">1</span>
+                                            <button class="btn btn-outline-secondary btn-sm quantity-btn" data-action="increase">+</button>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-link text-muted" data-bs-toggle="dropdown">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item view-details" href="#" data-id="2">Ver detalles</a></li>
+                                                <li><a class="dropdown-item text-danger remove-item" href="#" data-id="2">Eliminar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-white">
+                        <button class="btn btn-outline-dark btn-lg" onclick="window.location.href='../index.html'">
+                            <i class="fas fa-arrow-left me-2"></i>Seguir Comprando
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resumen -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">Resumen</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Código promocional -->
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2" data-bs-toggle="collapse" data-bs-target="#promoCode" style="cursor: pointer;">
+                                <span>¿Tienes un código promocional?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="collapse" id="promoCode">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="promoInput" placeholder="Ingresa tu código">
+                                    <button class="btn btn-dark" type="button" onclick="applyPromoCode()">Aplicar</button>
+                                </div>
+                                <div id="promoMessage" class="mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Detalles del pedido -->
+                        <div class="order-summary">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Total Productos: <span id="total-items">3</span></span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <span id="subtotal">$1.095.997,32</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Código promocional</span>
+                                <span id="promo-discount" class="text-success">$0</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>IVA (19%)</span>
+                                <span id="iva">$208.239,49</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Gastos de envío</span>
+                                <span id="shipping">$32.999,45</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-4">
+                                <strong>Total</strong>
+                                <strong id="total" class="text-danger">$1.337.236,26</strong>
+                            </div>
+                        </div>
+
+                        <!-- Métodos de pago -->
+                        <div class="payment-methods mb-4">
+                            <h6 class="mb-3">Métodos de pago</h6>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="credit" checked>
+                                <label class="form-check-label" for="creditCard">
+                                    <i class="fas fa-credit-card me-2"></i>Tarjeta de crédito
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="debitCard" value="debit">
+                                <label class="form-check-label" for="debitCard">
+                                    <i class="fas fa-credit-card me-2"></i>Tarjeta de débito
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal">
+                                <label class="form-check-label" for="paypal">
+                                    <i class="fab fa-paypal me-2"></i>PayPal
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="pse" value="pse">
+                                <label class="form-check-label" for="pse">
+                                    <i class="fas fa-university me-2"></i>PSE
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-dark btn-lg w-100" onclick="proceedToCheckout()">
+                            Continuar con el pago <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para detalles del producto -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalles del producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- El contenido se cargará dinámicamente -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <!-- FOOTER: Información de contacto, legales y redes sociales -->
+  <footer class="footer py-5 bg-brown text-white">
+      <div class="container">
+          <div class="row">
+              <!-- Información de contacto -->
+              <div class="col-md-4 mb-4 mb-md-0">
+                  <h4>Contáctanos</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><i class="fas fa-comment me-2"></i> Chatea con nosotros</li>
+                      <li class="mb-2"><i class="fas fa-envelope me-2"></i> Servicioalcliente@strivo.com</li>
+                      <li class="mb-2"><i class="fas fa-phone me-2"></i> +57 300 268 25 25</li>
+                      <li><i class="fas fa-map-marker-alt me-2"></i> Carrera 53B # 84 - 175 Bogotá - Colombia</li>
+                  </ul>
+              </div>
+              
+              <!-- Información legal -->
+              <div class="col-md-4 mb-4 mb-md-0">
+                  <h4>Legales</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#" class="text-white">Términos legales</a></li>
+                      <li class="mb-2"><a href="#" class="text-white">Políticas de Privacidad</a></li>
+                      <li><a href="#" class="text-white">Términos y condiciones</a></li>
+                  </ul>
+              </div>
+              
+              <!-- Redes sociales -->
+              <div class="col-md-4">
+                  <h4>Síguenos en:</h4>
+                  <div class="social-icons">
+                      <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                      <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                      <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                      <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Copyright -->
+          <div class="row mt-4">
+              <div class="col-12 text-center">
+                  <p class="mb-0">&copy; 2025 Strivo - Todos los derechos reservados</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap y JavaScript personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="./scriptShopping.js"></script>
+</body>
+</html>

@@ -1,0 +1,482 @@
+:root {
+    --brown: #4C3111;
+    --brown-light: #8A6D5B;
+    --cream: #ECE1D3;
+    --white: #FFFFFF;
+    --gray: #D9D9D9;
+    --dark: #1C1B1F;
+    --text-color: #000000;
+    --gray-text: #666666;
+}
+
+/* Estilos generales */
+
+*{
+    font-family: 'Shippori Mincho', serif;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--brown);
+}
+
+/* Secciòn del header */
+
+#section-header .header-content{
+    padding: 10px;
+    background-color: var(--cream);   
+}
+
+#section-header .logo{
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    transition: background-color 0.5s ease;
+}
+
+#section-header .logo-text{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+#section-header .logo-text img {
+  margin-right: 0.1rem;
+}
+
+#section-header .text-strivo{
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    color: var(--dark);
+    -webkit-text-stroke: 0.4px var(--dark);
+}
+
+#section-header .main-nav .nav-link {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 900;
+    font-size:18px;
+    color: var(--dark);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-text-stroke: 0.4px var(--dark);
+}
+
+#section-header .main-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--brown);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+    
+}
+
+#section-header .main-nav .nav-link:hover:after,
+.main-nav .nav-link.active:after {
+    width: 60%;
+}
+
+#section-header .search-bar form {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray);
+  border: 2px solid var(--cream);
+  border-radius: 2rem;
+  padding: 0.25rem 0.5rem;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+#section-header .search-bar button {
+  border: none;
+  background: transparent;
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+#section-header .btn-link {
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+
+#section-header .btn-link:hover {
+  color: var(--brown);
+}
+
+/* Estilo para el mega menú desplegable */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 600px;
+  background-color: var(--cream);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+/* Mostrar el mega menú al hacer hover */
+.nav-item.dropdown:hover .mega-menu {
+  display: block;
+}
+
+/* Asegura que los nav-item tengan posición relativa para posicionar el dropdown */
+.navbar .nav-item {
+  position: relative;
+}
+
+.text-uppercase{
+    font-weight: 900;
+    font-size: 15px;
+}
+
+/* Banner */
+.main-banner {
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(to right, #eae6e2, #868078);
+    color: var(--text-color); 
+    text-align: center;
+    border-radius: 2px;
+}
+
+.main-banner h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Ajustes opcionales */
+.dropdown-item {
+  padding: 0.5rem 0.2rem;
+  color: var(--gray-text);
+  font-size: 13px;
+}
+
+.ver-mas{
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--gray);
+}
+
+/* Ajustes opcionales */
+.dropdown-item2 {
+  padding: 0.5rem 0.2rem;
+  color: var(--gray-text);
+  font-size: 13px;
+}
+
+.dropdown-item2:hover {
+  background-color: var(--gray);
+}
+
+.general-container{
+    background-color: white;
+}
+
+/* Banner principal */
+.main-banner {
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.main-banner h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Filtros */
+.filters-container {
+    background-color: var(--light-gray);
+    padding: 15px;
+    border-radius: 8px;
+    /* background-color: rgba(97, 67, 27, 0.1); */
+    margin-bottom: 20px;
+}
+
+.filter-header {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.filter-options {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filter-options {
+    margin-top: 10px;
+}
+
+.filter-options label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+#filter-products{
+    width: 150px;
+    background-color: var(--dark);
+    margin: 0px 5px 25px 65px;
+    color: #FFFFFF;
+}
+
+/* Productos */
+.products-header {
+    margin-bottom: 20px;
+}
+
+.sorting-dropdown .btn {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.product-card {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.buy-overlay {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    transition: bottom 0.3s ease;
+}
+
+.product-card:hover .buy-overlay {
+    bottom: 0;
+}
+
+.brand {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.product-title {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.current-price {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.discount-badge {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Paginación */
+.pagination-controls {
+    margin: 30px 0;
+}
+
+.pagination-numbers {
+    display: flex;
+    align-items: center;
+}
+
+.page-indicator {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 5px;
+}
+
+#prev-page, #next-page {
+    padding: 8px 15px;
+}
+
+#prev-page {
+    margin-right: auto;
+}
+
+#next-page {
+    margin-left: auto;
+}
+
+
+
+
+/* Sección de suscripción */
+.bg-brown {
+    background-color: var(--brown);
+}
+
+.subscription-form input {
+    border: none;
+    padding: 12px 20px;
+}
+
+/* Footer */
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer a {
+    color: var(--white);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 1;
+    color: var(--white);
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+/* Modal de producto */
+.modal-content {
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .hero-content {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    
+    .hero-banner h2 {
+        font-size: 2rem;
+    }
+    
+    .category-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer h4 {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Animaciones y efectos */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el carrito de compras */
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}

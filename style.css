@@ -1,0 +1,369 @@
+:root {
+    --brown: #4C3111;
+    --brown-light: #8A6D5B;
+    --cream: #ECE1D3;
+    --white: #FFFFFF;
+    --gray: #D9D9D9;
+    --dark: #1C1B1F;
+    --text-color: #000000;
+    --gray-text: #666666;
+}
+
+/* Estilos generales */
+
+*{
+    font-family: 'Shippori Mincho', serif;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--brown);
+}
+
+/* Secciòn del header */
+
+#section-header .header-content{
+    padding: 10px;
+    background-color: var(--cream);   
+}
+
+#section-header .logo{
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    transition: background-color 0.5s ease;
+}
+
+#section-header .logo-text{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+#section-header .logo-text img {
+  margin-right: 0.1rem;
+}
+
+#section-header .text-strivo{
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    color: var(--dark);
+    -webkit-text-stroke: 0.4px var(--dark);
+}
+
+#section-header .main-nav .nav-link {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 900;
+    font-size:18px;
+    color: var(--dark);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-text-stroke: 0.4px var(--dark);
+}
+
+#section-header .main-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--brown);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+    
+}
+
+#section-header .main-nav .nav-link:hover:after,
+.main-nav .nav-link.active:after {
+    width: 60%;
+}
+
+#section-header .search-bar form {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray);
+  border: 2px solid var(--cream);
+  border-radius: 2rem;
+  padding: 0.25rem 0.5rem;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+#section-header .search-bar button {
+  border: none;
+  background: transparent;
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+#section-header .btn-link {
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+
+#section-header .btn-link:hover {
+  color: var(--brown);
+}
+
+/* Estilo para el mega menú desplegable */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 600px;
+  background-color: var(--cream);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+/* Mostrar el mega menú al hacer hover */
+.nav-item.dropdown:hover .mega-menu {
+  display: block;
+}
+
+/* Asegura que los nav-item tengan posición relativa para posicionar el dropdown */
+.navbar .nav-item {
+  position: relative;
+}
+
+.text-uppercase{
+    font-weight: 900;
+    font-size: 15px;
+}
+
+/* Ajustes opcionales */
+.dropdown-item {
+  padding: 0.5rem 0.2rem;
+  color: var(--gray-text);
+  font-size: 13px;
+}
+
+.ver-mas{
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--gray);
+}
+
+
+/* Sección Hero Banner */
+#hero-banner {
+    background-color: rgba(235, 232, 232, 0.831);;
+    overflow: hidden;
+}
+
+#hero-banner .text-brown {
+    color: var(--brown);
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 700;
+    -webkit-text-stroke: 0.4px var(--dark);
+}
+
+.hero-content {
+    min-height: 400px;
+}
+
+.hero-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn-brown {
+    background-color: var(--brown);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-brown:hover {
+    background-color: var(--brown-light);
+    color: var(--white);
+}
+
+/* Categorías */
+.category-card {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.categories-section{
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.85);
+}
+
+.category-card img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+.category-title {
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--text-color);
+    text-decoration: underline
+}
+
+.category-link {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+/* Productos */
+.product-card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.price {
+    font-weight: 600;
+    color: var(--brown);
+}
+
+/* Sección de suscripción */
+.bg-brown {
+    background-color: var(--brown);
+}
+
+.subscription-form input {
+    border: none;
+    padding: 12px 20px;
+}
+
+/* Footer */
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer a {
+    color: var(--white);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 1;
+    color: var(--white);
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+/* Modal de producto */
+.modal-content {
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .hero-content {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    
+    .hero-banner h2 {
+        font-size: 2rem;
+    }
+    
+    .category-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer h4 {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Animaciones y efectos */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el carrito de compras */
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
