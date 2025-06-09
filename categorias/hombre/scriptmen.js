@@ -6,7 +6,7 @@ const products = [
         price: 84999,
         oldPrice: null,
         discount: null,
-        image: './image/raqueta.jpg',
+        image: '../../image/raqueta.jpg',
         category: 'Deportes',
         popularity: 8
     },
@@ -17,7 +17,7 @@ const products = [
         price: 34999,
         oldPrice: 50999,
         discount: 30,
-        image: './image/pelotas_tenis.jpeg',
+        image: '../../image/pelotas_tenis.jpeg',
         category: 'Deportes',
         popularity: 7
     },
@@ -28,7 +28,7 @@ const products = [
         price: 224999,
         oldPrice: null,
         discount: null,
-        image: './image/conjunto.jpg',
+        image: '../../image/conjunto.jpg',
         category: 'Ropa',
         popularity: 9
     },
@@ -39,7 +39,7 @@ const products = [
         price: 279999,
         oldPrice: 307999,
         discount: 10,
-        image: './image/malla.jpg',
+        image: '../../image/malla.jpg',
         category: 'Deportes',
         popularity: 6
     },
@@ -50,7 +50,7 @@ const products = [
         price: 129999,
         oldPrice: 159999,
         discount: 20,
-        image: './image/Camiseta1.jpg',
+        image: '../../image/Camiseta1.jpg',
         category: 'Ropa',
         popularity: 8
     },
@@ -61,7 +61,7 @@ const products = [
         price: 199999,
         oldPrice: null,
         discount: null,
-        image: './image/zapatos2.jpg',
+        image: '../../image/zapatos2.jpg',
         category: 'Calzado',
         popularity: 7
     },
@@ -72,7 +72,7 @@ const products = [
         price: 349999,
         oldPrice: 399999,
         discount: 15,
-        image: './image/medias.jpg',
+        image: '../../image/medias.jpg',
         category: 'Ropa',
         popularity: 9
     },
@@ -83,7 +83,7 @@ const products = [
         price: 89999,
         oldPrice: null,
         discount: null,
-        image: './image/chaqueta.jpg',
+        image: '../../image/chaqueta.jpg',
         category: 'Ropa',
         popularity: 6
     },
@@ -94,7 +94,7 @@ const products = [
         price: 59999,
         oldPrice: 79999,
         discount: 25,
-        image: './image/gorra.jpg',
+        image: '../../image/gorra.jpg',
         category: 'Accesorios',
         popularity: 8
     },
@@ -105,7 +105,7 @@ const products = [
         price: 599999,
         oldPrice: 699999,
         discount: 15,
-        image: './image/pantalones.jpg',
+        image: '../../image/pantalones.jpg',
         category: 'Ropa',
         popularity: 9
     },
@@ -116,7 +116,7 @@ const products = [
         price: 329999,
         oldPrice: null,
         discount: null,
-        image: './image/mancuernas.jpg',
+        image: './../image/mancuernas.jpg',
         category: 'Deportes',
         popularity: 7
     },
@@ -127,7 +127,7 @@ const products = [
         price: 179999,
         oldPrice: 209999,
         discount: 15,
-        image: './image/guayos.jpg',
+        image: '../../image/guayos.jpg',
         category: 'Calzado',
         popularity: 8
     }
@@ -233,7 +233,7 @@ function renderProducts() {
                 <div class="product-img" style="background-image: url(${product.image})">
                     ${discountBadge}
                     <div class="buy-overlay">
-                        <button class="btn btn-light buy-btn"> <a href="./comprar.html"></a> Comprar ahora</button>
+                        <button class="btn btn-light buy-btn"> <a href="../../carrito/shopping.html"></a> Comprar ahora</button>
                     </div>
                 </div>
                 <span class="brand">${product.brand}</span>
@@ -343,7 +343,7 @@ document.addEventListener('click', (event) => {
         
         // Simulación de añadir al carrito
         // alert(`Producto añadido al carrito: ${productTitle}`);
-        window.location.href = './compra.html';
+        window.location.href = '../../compra/compra.html';
     }
 });
 

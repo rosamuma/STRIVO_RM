@@ -160,7 +160,7 @@ a:hover {
 /* Banner */
 .main-banner {
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
     background: linear-gradient(to right, #eae6e2, #868078);
     color: var(--text-color); 
     text-align: center;
@@ -344,7 +344,7 @@ a:hover {
 
 .discount-badge {
     background-color: var(--accent-color);
-    color: white;
+    color: #0d6efd;
     padding: 3px 8px;
     border-radius: 3px;
     font-size: 12px;

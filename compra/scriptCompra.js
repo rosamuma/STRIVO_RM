@@ -161,6 +161,7 @@ function showAddToCartConfirmation(product) {
     const originalText = addToCartBtn.textContent;
     addToCartBtn.textContent = '¡Agregado!';
     addToCartBtn.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+    window.location.href = '../carrito/shopping.html';
     
     // Restaurar después de 2 segundos
     setTimeout(() => {
